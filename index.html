@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STS Blood Bank</title>
+    <link rel="icon" type="image/x-icon" href="ss.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <header class="bg-red-700 text-white py-6 shadow-md">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-tint fa-3x mr-4"></i>
+                <h1 class="text-2xl font-bold">STS Blood Bank</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-red-300 transition duration-300"><i class="fas fa-home mr-1"></i> Home</a></li>
+                    <li><a href="#" class="hover:text-red-300 transition duration-300"><i class="fas fa-donate mr-1"></i> Donate Blood</a></li>
+                    <li><a href="#" class="hover:text-red-300 transition duration-300"><i class="fas fa-search mr-1"></i> Find Blood</a></li>
+                    <li><a href="#" class="hover:text-red-300 transition duration-300"><i class="fas fa-info-circle mr-1"></i> Services</a></li>
+                    <li><a href="#" class="hover:text-red-300 transition duration-300"><i class="fas fa-user-plus mr-1"></i> Register/Login</a></li>
+                </ul>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-white focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-10 px-6">
+        <section id="hero" class="mb-8 rounded-lg shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2 items-center">
+            <div class="relative">
+                <img src="bb.jpeg" alt="Welcome to Chittagong Online Blood Bank" class="w-full h-auto object-cover rounded-l-lg md:rounded-l-lg rounded-t-lg md:rounded-t-none">
+                <div class="absolute inset-0 bg-opacity-20"></div>
+            </div>
+            <div class="py-8 px-6 md:px-10 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-red-700 mb-4">Connecting People <br>For A Better Tomorrow</h2>
+                <p class="text-lg text-gray-700 mb-6">Welcome to Chittagong's leading online blood bank, dedicated to streamlining the process of blood donation and requests within our community. We empower individuals to become life-savers and ensure timely access to critical blood supplies.</p>
+                <div class="flex flex-col md:flex-row md:space-x-4 space-y-3 md:space-y-0 justify-center md:justify-start">
+                    <a href="#" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-md"><i class="fas fa-donate mr-2"></i> Become a Donor</a>
+                    <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-md"><i class="fas fa-search mr-2"></i> Request Blood</a>
+                </div>
+                <p class="mt-4 text-sm text-gray-600">Serving Chittagong with compassion and efficiency.</p>
+            </div>
+        </section>
+
+        <section id="online-features" class="bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 rounded-lg shadow-xl p-8 mb-8">
+            <div class="rounded-lg p-8" style="background: linear-gradient(to bottom right, #e0f2f7, #ffe0b2);">
+                <h2 class="text-2xl font-bold text-indigo-700 mb-8 text-center"><i class="fas fa-star-of-life mr-3 text-indigo-500"></i> Unlock the Features of Our Online Blood Bank</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-blue-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                        <i class="fas fa-user-check fa-3x text-blue-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Seamless Donor Registration</h3>
+                        <p class="text-gray-700">Join our network effortlessly. Register online and manage your donor profile with ease.</p>
+                        <a href="#" class="mt-4 inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">Become a Donor</a>
+                    </div>
+                    <div class="bg-green-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                        <i class="fas fa-search-plus fa-3x text-green-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Real-Time Blood Availability</h3>
+                        <p class="text-gray-700">Instantly check available blood groups across Chittagong. Find the help you need, when you need it.</p>
+                        <a href="#" class="mt-4 inline-block bg-green-500 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">Search Blood</a>
+                    </div>
+                    <div class="bg-red-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                        <i class="fas fa-bell fa-3x text-red-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Urgent Request System</h3>
+                        <p class="text-gray-700">In critical situations, submit urgent requests and get immediate notifications for potential matches.</p>
+                        <a href="#" class="mt-4 inline-block bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">Emergency Request</a>
+                    </div>
+                    <div class="bg-yellow-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                        <i class="fas fa-sync-alt fa-3x text-yellow-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Smart Compatibility Checker</h3>
+                        <p class="text-gray-700">Ensure safe donations and transfusions with our built-in blood type compatibility checker.</p>
+                        <a href="#" class="mt-4 inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">Check Compatibility</a>
+                    </div>
+                    <div class="bg-purple-100 rounded-lg shadow-md p-6 text-center hover:shadow-lg transition duration-300">
+                        <i class="fas fa-map-marked-alt fa-3x text-purple-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Local Donation Hub Locator</h3>
+                        <p class="text-gray-700">Find nearby donation centers and easily schedule your life-saving appointments online.</p>
+                        <a href="#" class="mt-4 inline-block bg-purple-500 hover:bg-purple-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">Find Centers</a>
+                    </div>
+                    <div class="bg-indigo-100 rounded-lg shadow-md py-5 px-6 text-center hover:shadow-lg transition duration-300 flex flex-col justify-center items-center">
+                        <i class="fas fa-comments fa-3x text-teal-600 mb-4"></i>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Thriving Community Forum</h3>
+                        <p class="text-gray-700">Connect, share, and support each other. Join our forum for donors and recipients in Chittagong.</p>
+                        <a href="#" class="mt-4 inline-block bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300">Join Community</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="how-it-works" class="bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 rounded-lg shadow-xl p-8 mb-8">
+            <div class="rounded-lg p-8" style="background: linear-gradient(to bottom right, #e0f2f7, #ffe0b2);">
+                <h2 class="text-2xl font-bold text-indigo-700 mb-8 text-center"><i class="fas fa-rocket mr-3 text-indigo-500"></i> Experience the Strength of Giving</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-blue-200 text-blue-700 rounded-md shadow-sm">
+                            <i class="fas fa-user-plus fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">1. Effortless Registration</h3>
+                            <p class="text-gray-700">Join our network in minutes! Create your secure profile and become a vital part of Chittagong's life-saving community. Update your details anytime.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-green-200 text-green-700 rounded-md shadow-sm">
+                            <i class="fas fa-search fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">2. Instant Blood Search</h3>
+                            <p class="text-gray-700">Need blood? Our intuitive search tool helps you quickly locate available blood groups across Chittagong. Connect with potential donors with ease.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-orange-200 text-orange-700 rounded-md shadow-sm">
+                            <i class="fas fa-handshake fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">3. Seamless Coordination</h3>
+                            <p class="text-gray-700">Our platform ensures secure and direct communication, making the coordination of blood donations smooth and efficient for everyone involved.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="p-3 bg-red-200 text-red-700 rounded-md shadow-sm">
+                            <i class="fas fa-heartbeat fa-2x"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-2">4. Make a Profound Impact</h3>
+                            <p class="text-gray-700">Your timely contribution can be the lifeline someone desperately needs. Join us in making a tangible difference in the lives of your fellow Chittagonians.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-lg text-gray-600">Ready to be a lifesaver? <a href="#" class="font-semibold text-indigo-600 hover:underline">Sign Up Today and Empower Our Community!</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="our-heros" class="rounded-lg shadow-xl p-8 relative overflow-hidden mb-8" style="background: linear-gradient(to right, #e0f2f7, #ffe0b2, #e0f2f7);">
+            <div class="rounded-lg p-8" style="background: linear-gradient(to bottom right, #e0f2f7, #ffe0b2);">
+                <h2 class="text-3xl font-extrabold text-blue-700 mb-8 text-center tracking-tight"><i class="fas fa-medal mr-4 text-blue-500"></i> Meet Our Lifesavers: Dedicated Donors</h2>
+                <p class="text-lg text-gray-800 text-center mb-8 leading-relaxed">Meet the extraordinary individuals in Chittagong whose regular blood donations illuminate our community and offer hope where it's needed most.</p>
+                <div class="donor-slide-container flex overflow-x-auto scroll-snap-x snap-mandatory -webkit-overflow-scrolling-touch pb-6">
+                    <div class="donor-card flex-shrink-0 w-4/5 max-w-sm mr-8 scroll-snap-align-start md:w-1/3">
+                        <div class="border border-red-200 rounded-xl shadow-md p-8 text-center hover:shadow-lg transition duration-300" style="background: linear-gradient(to bottom right, #fbe9e7, #bbdefb);">
+                            <img src="hero1.png" alt="Rahim Khan" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-red-300">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Rahim Khan</h3>
+                            <p class="text-lg text-red-700 font-bold">A-</p>
+                            <p class="text-sm text-gray-600 italic">A Pillar of Support</p>
+                            <div class="mt-4">
+                                <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-semibold mr-2 px-3 py-1 rounded-full">
+                                    <i class="fas fa-tint mr-1"></i> <span class="font-bold">9</span> Donations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donor-card flex-shrink-0 w-4/5 max-w-sm mr-8 scroll-snap-align-start md:w-1/3">
+                        <div class="border border-red-200 rounded-xl shadow-md p-8 text-center hover:shadow-lg transition duration-300" style="background: linear-gradient(to bottom right, #fbe9e7, #bbdefb);">
+                            <img src="hero2.png" alt="Farzana Ali" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-red-300">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Farzana Ali</h3>
+                            <p class="text-lg text-red-700 font-bold">O+</p>
+                            <p class="text-sm text-gray-600 italic">Champion of Giving</p>
+                            <div class="mt-4">
+                                <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-semibold mr-2 px-3 py-1 rounded-full">
+                                    <i class="fas fa-tint mr-1"></i> <span class="font-bold">22</span> Donations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donor-card flex-shrink-0 w-4/5 max-w-sm mr-8 scroll-snap-align-start md:w-1/3">
+                        <div class="border border-red-200 rounded-xl shadow-md p-8 text-center hover:shadow-lg transition duration-300" style="background: linear-gradient(to bottom right, #fbe9e7, #bbdefb);">
+                            <img src="hero3.png" alt="Aminul Islam" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-red-300">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Aminul Islam</h3>
+                            <p class="text-lg text-red-700 font-bold">B+</p>
+                            <p class="text-sm text-gray-600 italic">A True Inspiration</p>
+                            <div class="mt-4">
+                                <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-semibold mr-2 px-3 py-1 rounded-full">
+                                    <i class="fas fa-tint mr-1"></i> <span class="font-bold">18</span> Donations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donor-card flex-shrink-0 w-4/5 max-w-sm mr-8 scroll-snap-align-start md:w-1/3">
+                        <div class="border border-red-200 rounded-xl shadow-md p-8 text-center hover:shadow-lg transition duration-300" style="background: linear-gradient(to bottom right, #fbe9e7, #bbdefb);">
+                            <img src="hero4.png" alt="Nusrat Jahan" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-red-300">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Nusrat Jahan</h3>
+                            <p class="text-lg text-red-700 font-bold">AB+</p>
+                            <p class="text-sm text-gray-600 italic">A Heart of Gold</p>
+                            <div class="mt-4">
+                                <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-semibold mr-2 px-3 py-1 rounded-full">
+                                    <i class="fas fa-tint mr-1"></i> <span class="font-bold">6</span> Donations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donor-card flex-shrink-0 w-4/5 max-w-sm mr-8 scroll-snap-align-start md:w-1/3">
+                        <div class="border border-red-200 rounded-xl shadow-md p-8 text-center hover:shadow-lg transition duration-300" style="background: linear-gradient(to bottom right, #fbe9e7, #bbdefb);">
+                            <img src="hero5.png" alt="Omar Faruk" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-red-300">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Omar Faruk</h3>
+                            <p class="text-lg text-red-700 font-bold">O-</p>
+                            <p class="text-sm text-gray-600 italic">Silent Hero</p>
+                            <div class="mt-4">
+                                <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-semibold mr-2 px-3 py-1 rounded-full">
+                                    <i class="fas fa-tint mr-1"></i> <span class="font-bold">5</span> Donations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="donor-card flex-shrink-0 w-4/5 max-w-sm mr-8 scroll-snap-align-start md:w-1/3">
+                        <div class="border border-red-200 rounded-xl shadow-md p-8 text-center hover:shadow-lg transition duration-300" style="background: linear-gradient(to bottom right, #fbe9e7, #bbdefb);">
+                            <img src="hero6.png" alt="Sabiha Khatun" class="w-24 h-24 rounded-full mx-auto object-cover mb-4 border-4 border-red-300">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sabiha Khatun</h3>
+                            <p class="text-lg text-red-700 font-bold">A+</p>
+                            <p class="text-sm text-gray-600 italic">A Gift of Life</p>
+                            <div class="mt-4">
+                                <span class="inline-flex items-center bg-red-100 text-red-800 text-xs font-semibold mr-2 px-3 py-1 rounded-full">
+                                    <i class="fas fa-tint mr-1"></i> <span class="font-bold">6</span> Donations
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <button id="slideLeftBtn" class="absolute top-1/2 left-4 -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-l focus:outline-none">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="slideRightBtn" class="absolute top-1/2 right-4 -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r focus:outline-none">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                <p class="text-gray-700 text-center mt-6">Inspired by our heroes? <a href="#" class="text-blue-500 hover:underline font-semibold">Become a lifesaver today!</a></p>
+            </div>
+        </section>
+
+        <section id="contact" style="background: linear-gradient(to bottom right, #e0f2f7, #ffe0b2); padding: 64px 32px;" class="rounded-lg shadow-md mb-8">
+            <h2 class="text-3xl font-extrabold text-indigo-700 mb-8 text-center tracking-tight"><i class="fas fa-paper-plane mr-3 text-indigo-500"></i> Contact Us</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-2"><i class="fas fa-building mr-2"></i> Chittagong Online Blood Bank</h3>
+                    <p class="text-gray-700 mb-3"><i class="fas fa-map-marker-alt mr-2"></i> <strong>Address:</strong> 2#B Road, GEC, Chittagong, Bangladesh</p>
+                    <p class="text-gray-700 mb-3"><i class="fas fa-phone mr-2"></i><strong> Phone:</strong> +8801100008111</p>
+                    <p class="text-gray-700 mb-3"><i class="fas fa-envelope-open mr-2"></i> <strong>Email:</strong> <a href="mailto:[Your Support Email]" class="text-indigo-500 hover:underline"> stsblood@xyzmail.com</a></p>
+                    <p class="text-gray-700"><i class="fas fa-clock mr-2"></i><strong> Support Hours:</strong> 8 am to 8pm</p>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29407.89428897998!2d91.80594444999999!3d22.35685145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad278c48915555%3A0x947934934a3b9027!2sChittagong!5e0!3m2!1sen!2sbd!4v1712740966789!5m2!1sen!2sbd"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-md shadow-sm"></iframe>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-gradient-to-r from-red-800 to-red-900 text-white py-10 mt-12 shadow-lg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-6">
+                <h6 class="font-semibold text-white mb-3">Connect With Us</h6>
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="hover:text-indigo-400 transition duration-300"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="hover:text-blue-400 transition duration-300"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="hover:text-yellow-400 transition duration-300"><i class="fab fa-instagram fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="text-center mb-8">
+                <h6 class="font-semibold text-white mb-3">Explore</h6>
+                <ul class="list-none p-0 inline-block">
+                    <li class="mb-2 inline-block mr-4"><a href="#" class="hover:text-gray-300 transition duration-300">Home</a></li>
+                    <li class="mb-2 inline-block mr-4"><a href="#" class="hover:text-gray-300 transition duration-300">Donate Blood</a></li>
+                    <li class="mb-2 inline-block mr-4"><a href="#" class="hover:text-gray-300 transition duration-300">Find Blood</a></li>
+                    <li class="inline-block"><a href="#" class="hover:text-gray-300 transition duration-300">Services</a></li>
+                </ul>
+            </div>
+            <div class="container mx-auto px-6 text-center">
+                <p>© 2025 STS Blood Bank. All rights reserved.</p>
+                <p class="text-sm mt-2"><i class="fas fa-globe mr-1"></i> Connecting Donors and Recipients in Chittagong</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        main 
+        {
+        flex-grow: 1; 
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        }
+        main > section 
+        {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important; 
+        border-radius: 0 !important;
+        }
+        main > section:first-child 
+        {
+        border-top-left-radius: 0; 
+        border-top-right-radius: 0;
+        }
+        main > section:last-child 
+        {
+        border-bottom-left-radius: 0; 
+        border-bottom-right-radius: 0; 
+        margin-bottom: 0 !important; 
+        }
+        footer 
+        {
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        margin-top: 0 !important;
+        }
+        </style>
+
+    <script>
+        const slideContainer = document.querySelector('.donor-slide-container');
+        const slideLeftBtn = document.getElementById('slideLeftBtn');
+        const slideRightBtn = document.getElementById('slideRightBtn');
+        const donorCards = document.querySelectorAll('.donor-card');
+        let currentIndex = 0;
+
+        if (slideLeftBtn && slideRightBtn && slideContainer && donorCards.length > 0) 
+        {
+            const cardWidth = donorCards[0].offsetWidth + 16; 
+
+            slideLeftBtn.addEventListener('click', () => 
+            {
+                if (currentIndex > 0) 
+                {
+                    currentIndex--;
+                    slideContainer.scrollLeft -= cardWidth;
+                }
+            });
+
+            slideRightBtn.addEventListener('click', () => 
+            {
+                if (currentIndex < donorCards.length - 1) 
+                {
+                    currentIndex++;
+                    slideContainer.scrollLeft += cardWidth;
+                }
+            });
+
+            function updateButtonVisibility() 
+            {
+                slideLeftBtn.classList.toggle('opacity-50', currentIndex === 0);
+                slideLeftBtn.classList.toggle('cursor-not-allowed', currentIndex === 0);
+                slideRightBtn.classList.toggle('opacity-50', currentIndex === donorCards.length - 1);
+                slideRightBtn.classList.toggle('cursor-not-allowed', currentIndex === donorCards.length - 1);
+            }
+
+            slideContainer.addEventListener('scroll', () => 
+            {
+                const firstVisibleIndex = Math.round(slideContainer.scrollLeft / cardWidth);
+                if (firstVisibleIndex !== currentIndex) {
+                    currentIndex = firstVisibleIndex;
+                    updateButtonVisibility();
+                }
+            });
+
+            updateButtonVisibility();
+        }
+    </script>
+
+</body>
+</html>
